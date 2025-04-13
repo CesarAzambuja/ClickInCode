@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Presença Digital para Negócios Locais</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-gray-900 text-white scroll-smooth">
+
+  <!-- Header -->
+  <header class="bg-gray-900 fixed w-full top-0 left-0 z-50 shadow-md p-2">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+      <div class="text-xl font-bold text-teal-400">HighTech</div>
+      <nav class="hidden md:flex space-x-6 text-gray-300">
+        <a href="#sobre" class="hover:text-teal-400">Sobre</a>
+        <a href="#diferenciais" class="hover:text-teal-400">Diferenciais</a>
+        <a href="#portfolio" class="hover:text-teal-400">Portfólio</a>
+        <a href="#funciona" class="hover:text-teal-400">Como Funciona</a>
+        <a href="#contato" class="hover:text-teal-400">Contato</a>
+      </nav>
+      <!-- Botão de Tema -->
+      <button id="theme-toggle" class="text-teal-400 focus:outline-none ml-4 hidden md:block">
+        <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <!-- Ícone Moon para dark mode -->
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+        </svg>
+      </button>
+      <button id="menu-btn" class="md:hidden text-teal-400 focus:outline-none">
+        <svg class="w-6 h-6 menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="4" y1="6" x2="20" y2="6" />
+          <line x1="4" y1="12" x2="20" y2="12" />
+          <line x1="4" y1="18" x2="20" y2="18" />
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 bg-gray-800 w-full h-100">
+      <a href="#sobre" class="block py-2 text-teal-400 text-center text-xl p-5 m-5 font-bold">Sobre</a>
+      <a href="#diferenciais" class="block py-2 text-teal-400 text-center  text-xl p-5 m-5 font-bold">Diferenciais</a>
+      <a href="#portfolio" class="block py-2 text-teal-400 text-center  text-xl p-5 m-5 font-bold">Portfólio</a>
+      <a href="#funciona" class="block py-2 text-teal-400 text-center  text-xl p-5 m-5 font-bold">Como Funciona</a>
+      <a href="#contato" class="block py-2 text-teal-400 text-center  text-xl p-5 m-5 font-bold">Contato</a>
+    </div>
+  </header>
+
+  <main class="">
+    <!-- Hero Section -->
+    <section class="min-h-screen flex flex-col justify-center items-center text-center p-6 fade-in hero">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4 text-teal-400">Soluções Digitais para Negócios</h1>
+      <p class="text-gray-400 text-lg md:text-xl mb-6 max-w-2xl">
+        Sites e sistemas personalizados para sua empresa. Simples, seguros e feitos pra você.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="#contato"
+          class="bg-teal-500 text-white px-6 py-3 rounded-xl font-semibold hover:bg-teal-600 transition">Fale com a
+          gente</a>
+        <a href="#portfolio"
+          class="border border-teal-400 px-6 py-3 rounded-xl font-semibold hover:bg-teal-600 hover:text-white transition">Ver
+          portfólio</a>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="px-6 py-20 max-w-6xl mx-auto fade-in">
+      <h2 class="text-3xl font-bold mb-6 text-teal-400">Conheçendo a HighTech _></h2>
+      <div class="flex justify-content-between w-100% items-center flex-col md:flex-row gap-8">
+        <p class="text-gray-400 text-lg max-w-2xl text-justify">
+          A HighTech é uma empresa dedicada a oferecer soluções digitais inovadoras para pequenos e médios negócios. Com
+          um foco especial em sites e sistemas personalizados, nossa missão é transformar a presença digital de nossos
+          clientes, tornando-a mais eficiente e impactante.
+
+          Nossa equipe de especialistas está comprometida em entender as necessidades únicas de cada cliente, garantindo
+          que cada projeto seja desenvolvido com atenção aos detalhes e às melhores práticas do mercado. Trabalhamos com
+          tecnologia de ponta para entregar resultados que não apenas atendem, mas superam as expectativas.
+
+          Na HighTech, acreditamos que a tecnologia deve ser acessível e fácil de usar. Por isso, oferecemos soluções
+          que
+          são simples, seguras e adaptáveis às necessidades do seu negócio. </p>
+
+        <div class=" rounded-circle max-w-2xl">
+          <img src="https://picsum.photos/300" alt="" class="rounded-full w-64 h-64 object-cover shadow-lg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Diferenciais -->
+    <section id="diferenciais" class="px-6 py-20 max-w-6xl mx-auto fade-in">
+      <h2 class="text-3xl font-bold text-gray-500 mb-10">Nossos Diferenciais</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+        <div class="card bg-gray-600 p-6 rounded-xl">
+          <i class="fas fa-headset text-teal-400 text-xl mb-4"></i>
+          <p class="text-teal-400 text-xl font-semibold">Atendimento Personalizado</p>
+        </div>
+        <div class="card bg-gray-800 p-6 rounded-xl">
+          <i class="fas fa-ruler text-teal-400 text-xl mb-4"></i>
+          <p class="text-teal-400 text-xl font-semibold">Soluções sob medida</p>
+        </div>
+        <div class="card bg-gray-600 p-6 rounded-xl">
+          <i class="fas fa-chalkboard text-teal-400 text-xl mb-4"></i>
+          <p class="text-teal-400 text-xl font-semibold">Tecnologia de Ponta</p>
+        </div>
+        <div class="card bg-gray-800 p-6 rounded-xl">
+          <i class="fas fa-poll text-teal-400 text-xl mb-4"></i>
+          <p class="text-teal-400 text-xl font-semibold">Foco no Resultado</p>
+        </div>
+        <div class="card bg-gray-800 p-6 rounded-xl">
+          <i class="far fa-comments text-teal-400 text-xl mb-4"></i>
+          <p class="text-teal-400 text-xl font-semibold">Suporte Contínuo</p>
+        </div>
+        <div class="card bg-gray-600 p-6 rounded-xl">
+          <i class="fas fa-fingerprint text-teal-400 text-xl mb-4"></i>
+          <p class="text-teal-400 text-xl font-semibold">Segurança e Confiabilidade</p>
+        </div>
+        <div class="card bg-gray-800 p-6 rounded-xl">
+          <i class="fas fa-mobile-alt text-teal-400 text-xl mb-4"></i>
+          <p class="text-teal-400 text-xl font-semibold">Design Responsivo</p>
+        </div>
+        <div class="card bg-gray-600 p-6 rounded-xl">
+          <i class="far fa-thumbs-up  text-teal-400 text-xl mb-4"></i>
+          <p class="text-teal-400 text-xl font-semibold">Integração com Mídias Sociais</p>
+        </div>
+    </section>
+
+    <!-- Portfólio -->
+    <section id="portfolio" class="px-6 py-20 max-w-6xl mx-auto fade-in">
+      <h2 class="text-3xl font-bold text-teal-400 mb-10">Portfólio</h2>
+      <p class="text-gray-400 mb-6">Confira alguns dos nossos projetos mais recentes, desenvolvidos com atenção aos
+        detalhes e foco na experiência do usuário.</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-5 text-white">
+        <!-- Card -->
+        <div
+          class="bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 flex flex-col">
+          <img src="https://picsum.photos/300" alt="Projeto 1" class="w-full h-48 object-cover">
+          <div class="p-5 flex flex-col flex-grow">
+            <h3 class="text-2xl font-semibold mb-2 text-teal-400">Título do Projeto</h3>
+            <p class="text-gray-300 mb-4 flex-grow">Descrição breve do projeto, destacando os principais recursos e
+              objetivos entregues ao cliente.</p>
+            <a href="#"
+              class="mt-auto inline-block text-center bg-teal-500 hover:bg-teal-600 text-white font-semibold px-4 py-2 rounded-xl transition">Ver
+              Detalhes</a>
+          </div>
+        </div>
+
+        <div
+          class="bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 flex flex-col">
+          <img src="https://picsum.photos/300" alt="Projeto 2" class="w-full h-48 object-cover">
+          <div class="p-5 flex flex-col flex-grow">
+            <h3 class="text-2xl font-semibold mb-2 text-teal-400">Título do Projeto</h3>
+            <p class="text-gray-300 mb-4 flex-grow">Descrição breve do projeto, destacando os principais recursos e
+              objetivos entregues ao cliente.</p>
+            <a href="#"
+              class="mt-auto inline-block text-center bg-teal-500 hover:bg-teal-600 text-white font-semibold px-4 py-2 rounded-xl transition">Ver
+              Detalhes</a>
+          </div>
+        </div>
+        <div
+          class="bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 flex flex-col">
+          <img src="https://picsum.photos/300" alt="Projeto 2" class="w-full h-48 object-cover">
+          <div class="p-5 flex flex-col flex-grow">
+            <h3 class="text-2xl font-semibold mb-2 text-teal-400">Título do Projeto</h3>
+            <p class="text-gray-300 mb-4 flex-grow">Descrição breve do projeto, destacando os principais recursos e
+              objetivos entregues ao cliente.</p>
+            <a href="#"
+              class="mt-auto inline-block text-center bg-teal-500 hover:bg-teal-600 text-white font-semibold px-4 py-2 rounded-xl transition">Ver
+              Detalhes</a>
+          </div>
+        </div>
+        <div
+          class="bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 flex flex-col">
+          <img src="https://picsum.photos/300" alt="Projeto 2" class="w-full h-48 object-cover">
+          <div class="p-5 flex flex-col flex-grow">
+            <h3 class="text-2xl font-semibold mb-2 text-teal-400">Título do Projeto</h3>
+            <p class="text-gray-300 mb-4 flex-grow">Descrição breve do projeto, destacando os principais recursos e
+              objetivos entregues ao cliente.</p>
+            <a href="#"
+              class="mt-auto inline-block text-center bg-teal-500 hover:bg-teal-600 text-white font-semibold px-4 py-2 rounded-xl transition">Ver
+              Detalhes</a>
+          </div>
+        </div>
+        <div
+          class="bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 flex flex-col">
+          <img src="https://picsum.photos/300" alt="Projeto 2" class="w-full h-48 object-cover">
+          <div class="p-5 flex flex-col flex-grow">
+            <h3 class="text-2xl font-semibold mb-2 text-teal-400">Título do Projeto</h3>
+            <p class="text-gray-300 mb-4 flex-grow">Descrição breve do projeto, destacando os principais recursos e
+              objetivos entregues ao cliente.</p>
+            <a href="#"
+              class="mt-auto inline-block text-center bg-teal-500 hover:bg-teal-600 text-white font-semibold px-4 py-2 rounded-xl transition">Ver
+              Detalhes</a>
+          </div>
+        </div>
+        <div
+          class="bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 flex flex-col">
+          <img src="https://picsum.photos/300" alt="Projeto 2" class="w-full h-48 object-cover">
+          <div class="p-5 flex flex-col flex-grow">
+            <h3 class="text-2xl font-semibold mb-2 text-teal-400">Título do Projeto</h3>
+            <p class="text-gray-300 mb-4 flex-grow">Descrição breve do projeto, destacando os principais recursos e
+              objetivos entregues ao cliente.</p>
+            <a href="#"
+              class="mt-auto inline-block text-center bg-teal-500 hover:bg-teal-600 text-white font-semibold px-4 py-2 rounded-xl transition">Ver
+              Detalhes</a>
+          </div>
+        </div>
+
+    </section>
+
+    <!-- Como Funciona -->
+    <section id="funciona" class="px-6 py-20 max-w-6xl mx-auto fade-in">
+      <h2 class="text-3xl font-bold text-gray-500 mb-10">Como Funciona</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div class="bg-gray-800 p-6 rounded-xl">
+          <i class="fas fa-exclamation-triangle text-3xl text-teal-400 mb-5"></i>
+          <p class="text-white text-lg font-semibold">Analise do cenario atual</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-xl">
+          <i class="fas fa-sitemap text-3xl text-teal-400 mb-5"></i>
+          <p class="text-white text-lg font-semibold">Apresentação do Projeto e Proposta</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-xl">
+          <i class="fas fa-laptop-code text-3xl text-teal-400 mb-5"></i>
+          <p class="text-white text-lg font-semibold">Desenvolvimento Personalizado</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-xl">
+          <i class="fas fa-chalkboard-teacher text-3xl text-teal-400 mb-5"></i>
+          <p class="text-white text-lg font-semibold">Testes Integrados</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-xl">
+          <i class="fas fa-truck text-3xl text-teal-400 mb-5"></i>
+          <p class="text-white text-lg font-semibold">Entregamos tudo funcionando</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-xl">
+          <i class="fas fa-headset text-3xl text-teal-400 mb-5"></i>
+          <p class="text-white text-lg font-semibold">Suporte Continuo</p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Contato -->
+    <section id="contato" class="px-6 py-20 text-center max-w-4xl mx-auto fade-in">
+      <h2 class="text-3xl font-bold text-teal-400 mb-10">Vamos conversar?</h2>
+      <p class="text-gray-400 mb-6">Estamos prontos para ouvir sua ideia e transformar em um projeto digital sob medida.
+      </p>
+      <a href="mailto:contato@suaempresa.com"
+        class="inline-block bg-teal-500 text-white px-6 py-3 rounded-xl font-semibold hover:bg-teal-600 transition">Enviar
+        e-mail</a>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-gray-300 py-12 px-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+  
+      <!-- Logo e Descrição -->
+      <div>
+        <div class="text-2xl font-bold text-teal-400 mb-2">HighTech</div>
+        <p class="text-sm text-gray-400">Soluções digitais sob medida para negócios que querem crescer com presença online e automação.</p>
+      </div>
+  
+      <!-- Contato -->
+      <div>
+        <h3 class="text-lg font-semibold text-white mb-4">Contato</h3>
+        <ul class="space-y-2 text-sm">
+          <li><strong>Email:</strong> contato@suaempresa.com</li>
+          <li><strong>Telefone:</strong> (11) 99999-9999</li>
+          <li><strong>Endereço:</strong> Rua Exemplo, 123 - São Paulo, SP</li>
+        </ul>
+      </div>
+  
+      <!-- Redes sociais -->
+      <div>
+        <h3 class="text-lg font-semibold text-white mb-4">Redes sociais</h3>
+        <div class="flex space-x-4">
+          <a href="#" class="hover:text-teal-400 transition" aria-label="Instagram">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm4.75-.88a1 1 0 110 2 1 1 0 010-2z" />
+            </svg>
+          </a>
+          <a href="#" class="hover:text-teal-400 transition" aria-label="LinkedIn">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M6.94 3.5a2.44 2.44 0 110 4.88 2.44 2.44 0 010-4.88zM5.22 8.75h3.43v11.75H5.22V8.75zm5.59 0h3.28v1.61h.05c.46-.87 1.59-1.78 3.27-1.78 3.5 0 4.14 2.3 4.14 5.29v6.63h-3.43v-5.88c0-1.4-.03-3.2-1.95-3.2s-2.25 1.52-2.25 3.09v6h-3.43V8.75z" />
+            </svg>
+          </a>
+          <a href="#" class="hover:text-teal-400 transition" aria-label="Facebook">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M15 2.01H9C6.24 2.01 4 4.26 4 7.01V17c0 2.75 2.24 5 5 5h3v-7H9v-3h3V9.5c0-2.76 1.68-4.25 4.13-4.25 1.19 0 2.38.22 2.38.22v3h-1.34c-1.32 0-1.72.82-1.72 1.65V12h3l-.48 3H15v7h1c2.75 0 5-2.25 5-5V7.01c0-2.75-2.25-5-5-5z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="mt-10 text-center text-gray-500 text-sm border-t border-gray-700 pt-6">
+      &copy; 2025 HighTech. Todos os direitos reservados.
+    </div>
+  </footer>
+  
+
+  <script src="https://kit.fontawesome.com/f4dd9ff78b.js" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
