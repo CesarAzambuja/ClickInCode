@@ -5,6 +5,5 @@ document.addEventListener("DOMContentLoaded", function () {
     once: true,
     offset: 100,
     easing: "ease-in-out",
-    delay: 100,
   });
 });
