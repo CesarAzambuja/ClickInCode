@@ -8,6 +8,8 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="css/animations.css">
 </head>
 
 <body class="bg-gray-900 text-white scroll-smooth">
@@ -52,7 +54,7 @@
 
   <main class="">
     <!-- Hero Section -->
-    <section class="min-h-screen flex flex-col justify-center items-center text-center p-6 fade-in hero">
+    <section class="min-h-screen flex flex-col justify-center items-center text-center p-6 fade-in hero" data-aos="fade-down">
       <h1 class="text-4xl md:text-6xl font-bold mb-4 text-teal-400">Soluções Digitais para Negócios</h1>
       <p class="text-gray-400 text-lg md:text-xl mb-6 max-w-2xl">
         Sites e sistemas personalizados para sua empresa. Simples, seguros e feitos pra você.
@@ -68,7 +70,7 @@
     </section>
 
     <!-- Sobre -->
-    <section id="sobre" class="px-6 py-20 max-w-6xl mx-auto fade-in">
+    <section id="sobre" class="px-6 py-20 max-w-6xl mx-auto fade-in" data-aos="fade-up">
       <h2 class="text-3xl font-bold mb-6 text-teal-400">Conheçendo a ClickInCode _></h2>
       <div class="flex justify-content-between w-100% items-center flex-col md:flex-row gap-8">
         <p class="text-gray-400 text-lg max-w-2xl text-justify">
@@ -91,7 +93,7 @@
     </section>
 
     <!-- Diferenciais -->
-    <section id="diferenciais" class="px-6 py-20 max-w-6xl mx-auto fade-in">
+    <section id="diferenciais" class="px-6 py-20 max-w-6xl mx-auto fade-in" data-aos="fade-right">
       <h2 class="text-3xl font-bold text-gray-500 mb-10">Nossos Diferenciais</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
         <div class="card bg-gray-600 p-6 rounded-xl">
@@ -136,7 +138,7 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-5 text-white">
         <!-- Card -->
         <div
-          class="bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 flex flex-col">
+          class="bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 flex flex-col" data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-delay="100">
           <img src="/img/Menu.png" alt="Projeto 1" class="w-full h-48 object-cover">
           <div class="p-5 flex flex-col flex-grow">
             <h3 class="text-2xl font-semibold mb-2 text-teal-400">Menu On-Line</h3>
@@ -148,7 +150,7 @@
         </div>
 
         <div
-          class="bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 flex flex-col">
+          class="bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 flex flex-col" data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-delay="300">
           <img src="/img/Psicologa.png" alt="Projeto 2" class="w-full h-48 object-cover">
           <div class="p-5 flex flex-col flex-grow">
             <h3 class="text-2xl font-semibold mb-2 text-teal-400">Site Psicologa Alícia Curado</h3>
@@ -159,7 +161,7 @@
           </div>
         </div>
         <div
-          class="bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 flex flex-col">
+          class="bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 flex flex-col" data-aos="zoom-in" data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-delay="500">
           <img src="/img/Boost.png" alt="Projeto 2" class="w-full h-48 object-cover">
           <div class="p-5 flex flex-col flex-grow">
             <h3 class="text-2xl font-semibold mb-2 text-teal-400">Site para a Boost Agency</h3>
@@ -209,7 +211,7 @@
     </section>
 
     <!-- Como Funciona -->
-    <section id="funciona" class="px-6 py-20 max-w-6xl mx-auto fade-in">
+    <section id="funciona" class="px-6 py-20 max-w-6xl mx-auto fade-in" data-aos="fade-left">
       <h2 class="text-3xl font-bold text-gray-500 mb-10">Como Funciona</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
         <div class="bg-gray-800 p-6 rounded-xl">
@@ -242,7 +244,7 @@
 
 
     <!-- Contato -->
-    <section id="contato" class="px-6 py-20 text-center max-w-4xl mx-auto fade-in">
+    <section id="contato" class="px-6 py-20 text-center max-w-4xl mx-auto fade-in" data-aos="flip-left" data-aos-easing="ease-in-out" data-aos-delay="300">
       <h2 class="text-3xl font-bold text-teal-400 mb-10">☕️ Vamos conversar?</h2>
       <p class="text-gray-400 mb-6">Estamos prontos para ouvir sua ideia e transformar em um projeto digital sob medida.
       </p>
@@ -278,7 +280,7 @@
       <div>
         <h3 class="text-lg font-semibold text-white mb-4">Redes sociais</h3>
         <div class="flex space-x-4">
-          <a href="#" class="hover:text-teal-400 transition" aria-label="Instagram">
+          <a href="https://www.instagram.com/clickincode?igsh=MWh6MTNpMXphc28yZQ==" target="_blank" class="hover:text-teal-400 transition" aria-label="Instagram">
             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
               <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm4.75-.88a1 1 0 110 2 1 1 0 010-2z" />
             </svg>
@@ -288,7 +290,7 @@
               <path d="M6.94 3.5a2.44 2.44 0 110 4.88 2.44 2.44 0 010-4.88zM5.22 8.75h3.43v11.75H5.22V8.75zm5.59 0h3.28v1.61h.05c.46-.87 1.59-1.78 3.27-1.78 3.5 0 4.14 2.3 4.14 5.29v6.63h-3.43v-5.88c0-1.4-.03-3.2-1.95-3.2s-2.25 1.52-2.25 3.09v6h-3.43V8.75z" />
             </svg>
           </a>
-          <a href="#" class="hover:text-teal-400 transition" aria-label="Facebook">
+          <a href="https://www.instagram.com/clickincode?igsh=MWh6MTNpMXphc28yZQ==" target="_blank" class="hover:text-teal-400 transition" aria-label="Facebook">
             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
               <path d="M15 2.01H9C6.24 2.01 4 4.26 4 7.01V17c0 2.75 2.24 5 5 5h3v-7H9v-3h3V9.5c0-2.76 1.68-4.25 4.13-4.25 1.19 0 2.38.22 2.38.22v3h-1.34c-1.32 0-1.72.82-1.72 1.65V12h3l-.48 3H15v7h1c2.75 0 5-2.25 5-5V7.01c0-2.75-2.25-5-5-5z" />
             </svg>
@@ -305,6 +307,8 @@
 
   <script src="https://kit.fontawesome.com/f4dd9ff78b.js" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/animations.js"></script>
 </body>
 
 </html>
